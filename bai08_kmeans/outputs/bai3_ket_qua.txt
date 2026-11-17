@@ -1,0 +1,6 @@
+TONG HOP K-MEANS RANDOM VA K-MEANS++
+     init  so_lan_dat_23  inertia_min  inertia_max  inertia_trung_binh
+k-means++             50       23.017       23.017              23.017
+   random             30       23.017      204.046              53.291
+
+Chi tiet 100 lan chay: bai3_ket_qua_100_lan.csv

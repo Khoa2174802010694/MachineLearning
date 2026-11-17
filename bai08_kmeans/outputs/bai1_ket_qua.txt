@@ -1,0 +1,12 @@
+BAI 1: TU TINH SILHOUETTE
+Silhouette NumPy: 0.722706
+Silhouette sklearn: 0.722706
+Do chenh lech: 0.0000000000
+
+Khach hang co Silhouette nho nhat: 114
+Thu nhap: 25.4
+Diem chi tieu: 41
+Cum: 2
+a = 0.9178
+b = 0.9448
+s = 0.0286

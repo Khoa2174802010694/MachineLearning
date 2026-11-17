@@ -1,0 +1,31 @@
+KET QUA PHAN CUM CHU SO
+So mau: 1797
+So cum: 10
+ARI: 0.6657
+
+BANG DOI CHIEU
+Cum          0    1    2   3    4    5    6    7    8    9
+Nhan that                                                 
+0          176    0    0   0    0    0    2    0    0    0
+1            0  100    0  54    1    2    0    1    0   24
+2            1    8    3   2   13    0    0    0    2  148
+3            0    7    7   0  154    0    0    2   13    0
+4            0    2   11   3    0    0  165    0    0    0
+5            0    0    0   0    2    1    2  136   41    0
+6            1    3    0   0    0  177    0    0    0    0
+7            0    2  174   2    0    0    0    1    0    0
+8            0  100    5   6    2    2    0    4   52    3
+9            0    1    8  20    6    0    0    6  139    0
+
+CHU SO CHIEM UU THE TRONG TUNG CUM
+
+Cum 0: Chu so 0 chiem uu the voi 176/178 mau
+Cum 1: Chu so 1 chiem uu the voi 100/223 mau
+Cum 2: Chu so 7 chiem uu the voi 174/208 mau
+Cum 3: Chu so 1 chiem uu the voi 54/87 mau
+Cum 4: Chu so 3 chiem uu the voi 154/178 mau
+Cum 5: Chu so 6 chiem uu the voi 177/182 mau
+Cum 6: Chu so 4 chiem uu the voi 165/169 mau
+Cum 7: Chu so 5 chiem uu the voi 136/150 mau
+Cum 8: Chu so 9 chiem uu the voi 139/247 mau
+Cum 9: Chu so 2 chiem uu the voi 148/175 mau

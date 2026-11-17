@@ -1,0 +1,6 @@
+KET QUA GRID SEARCH
+Tham so tot nhat: {'mlpclassifier__alpha': 1, 'mlpclassifier__hidden_layer_sizes': (50,)}
+Accuracy kiem dinh cheo: 0.9785
+Accuracy MLP tren tap kiem tra: 0.9822
+Accuracy SVM tren tap kiem tra: 0.9778
+MLP co accuracy cao hon SVM.

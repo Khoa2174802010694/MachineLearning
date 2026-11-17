@@ -1,0 +1,13 @@
+KET QUA HOI QUY GIA NHA
+MAE hoi quy tuyen tinh: 0.2185
+MAE MLP: 0.4242
+
+DU DOAN CAN NHA 250 M2
+So phong: 2.0
+Tuoi nha: 13.5
+Gia hoi quy tuyen tinh: 18.4818
+Gia MLP: 20.9106
+
+Pham vi dien tich: 35.50 - 117.50 m2
+Can nha 250 m2 nam ngoai pham vi du lieu.
+Day la truong hop ngoai suy.

@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv("bai01_hoi_quy/data/gia_nha.csv")
+df = pd.read_csv("data/gia_nha.csv")
 
 X = df[["dien_tich"]]
 y = df["gia"]

@@ -3,7 +3,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
-df = pd.read_csv("bai01_hoi_quy/data/gia_nha.csv")
+df = pd.read_csv("data/gia_nha.csv")
 
 y = df["gia"]
 models = {

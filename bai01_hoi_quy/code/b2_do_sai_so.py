@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("bai01_hoi_quy/data/gia_nha.csv")
+df = pd.read_csv("data/gia_nha.csv")
 data = df.iloc[[0, 14, 29, 44, 59]]
 
 x = data["dien_tich"].to_numpy()

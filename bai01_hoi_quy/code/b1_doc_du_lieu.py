@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("bai01_hoi_quy/data/gia_nha.csv")
+df = pd.read_csv("data/gia_nha.csv")
 
 print("Kich thuoc:", df.shape)
 print("\n5 dong dau:")

@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv("bai01_hoi_quy/data/gia_nha.csv")
+df = pd.read_csv("data/gia_nha.csv")
 
 x_goc = df["dien_tich"].to_numpy()
 y = df["gia"].to_numpy()

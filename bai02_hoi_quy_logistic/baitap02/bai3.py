@@ -1,72 +1,62 @@
-# -*- coding: utf-8 -*-
-
-"""
-Bài tập 3: Dự đoán kết quả cho một sinh viên cụ thể.
-
-Mô hình chỉ sử dụng số giờ ôn để dự đoán khả năng qua môn.
-"""
-
+'''
+Bài tập 3: Dự đoán cho một bạn cụ thể
+Khớp lại mô hình một biến như ở mục 4, rồi viết một hàm du_doan(gio) nhận vào số giờ
+ôn và in ra ba thứ. Giá trị z, xác suất qua môn, và nhãn theo ngưỡng 0.5.
+Gọi hàm đó với các giá trị 3, 8, 12.89, 18 và 26 giờ. Giải thích vì sao với 12.89 giờ thì xác
+suất ra gần đúng 0.5.
+'''
 import pandas as pd
-
+import numpy as np
 from sklearn.linear_model import LogisticRegression
 
 
-# Đọc dữ liệu
+# Doc du lieu
 df = pd.read_csv("data/sinh_vien.csv")
 
-
-# Chọn biến đầu vào và biến mục tiêu
+# Chuan bi du lieu huan luyen
 X = df[["gio_on"]]
 y = df["qua_mon"]
 
-
-# Huấn luyện mô hình hồi quy logistic
+# Huan luyen mo hinh hoi quy logistic
 mo_hinh = LogisticRegression()
 mo_hinh.fit(X, y)
 
-
-# Lấy hệ số của mô hình
+# Lay he so w va b
 w = float(mo_hinh.coef_[0][0])
 b = float(mo_hinh.intercept_[0])
 
+print(f"He so goc w = {w:.6f}")
+print(f"He so chan b = {b:.6f}")
 
-# Hàm dự đoán
+
+# Ham du doan ket qua qua mon
 def du_doan(gio):
-    """
-    Nhận số giờ ôn và in ra:
-    - Giá trị z
-    - Xác suất qua môn
-    - Nhãn dự đoán theo ngưỡng 0.5
-    """
-
-    # Tính z = w*x + b
     z = w * gio + b
-
-    # Tính xác suất bằng hàm sigmoid
-    xac_suat = 1 / (1 + __import__("math").exp(-z))
-
-    # Chuyển xác suất thành nhãn
+    xac_suat = 1 / (1 + np.exp(-z))
     nhan = 1 if xac_suat >= 0.5 else 0
 
-    print(f"So gio on: {gio:.2f}")
-    print(f"z = {z:.4f}")
-    print(f"Xac suat qua mon = {xac_suat:.4f}")
-    print(f"Nhãn du doan = {nhan}")
-    print()
+    print(f"So gio on: {gio} gio")
+    print(f"Gia tri z: {z:.6f}")
+    print(f"Xac suat qua mon: {xac_suat:.4f}")
+    print(f"Nhan du doan: {nhan}")
+    print("-" * 40)
 
 
-# Dự đoán cho các số giờ được yêu cầu
+# Du doan cho nam gia tri gio on
+print("\nKET QUA DU DOAN")
+print("=" * 40)
+
 for gio in [3, 8, 12.89, 18, 26]:
     du_doan(gio)
 
 
-# Giải thích trường hợp 12.89 giờ
-print("Giai thich:")
+# Giai thich moc 12.89 gio
+print("GIAI THICH")
 print(
-    "12.89 gio gan voi nguong phan chia cua mo hinh, "
-    "nen gia tri z gan 0."
+    "Tai 12.89 gio, gia tri z gan bang 0 nen xac suat "
+    "qua mon gan bang 0.5."
 )
 print(
-    "Khi z gan 0 thi ham sigmoid cho xac suat gan 0.5, "
-    "vi vay ket qua tai 12.89 gio gan muc 50%."
+    "Day la diem nguong phan loai cua mo hinh, "
+    "vi sigmoid(0) = 0.5."
 )

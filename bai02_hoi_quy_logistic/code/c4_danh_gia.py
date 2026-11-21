@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """
 Bước 4: Chia dữ liệu rồi chấm điểm mô hình bằng bốn thước đo.
 """

@@ -1,28 +1,29 @@
-# -*- coding: utf-8 -*-
-
-"""
-Bài tập 6: Đổi lớp dương thành lớp rớt môn.
-
-So sánh Precision và Recall khi:
-- Lớp dương là 1: qua môn.
-- Lớp dương là 0: rớt môn.
-"""
-
+'''
+Bài tập 6: Đổi lớp dương rồi chấm lại
+Ở mục 5 ta luôn lấy lớp dương là qua môn. Bây giờ hãy chấm điểm cho lớp rớt môn, tức
+lớp 0.
+Gợi ý, thêm tham số pos_label=0 vào precision_score và recall_score. In ra precision
+và recall của lớp 0 rồi so với con số của lớp 1 trong tài liệu. Giải thích bằng lời vì sao hai
+bộ số khác nhau, dù mô hình và dữ liệu không đổi chút nào.
+'''
 import pandas as pd
 
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import precision_score, recall_score
+from sklearn.metrics import (
+    precision_score,
+    recall_score,
+)
 from sklearn.model_selection import train_test_split
 
 
-# Đọc dữ liệu
+# Doc du lieu
 df = pd.read_csv("data/sinh_vien.csv")
 
 X = df[["gio_on"]]
 y = df["qua_mon"]
 
 
-# Chia dữ liệu thành tập huấn luyện và tập kiểm tra
+# Chia du lieu giong Bai 4
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
@@ -32,71 +33,71 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 
-# Huấn luyện mô hình
+# Huan luyen mo hinh
 mo_hinh = LogisticRegression()
 mo_hinh.fit(X_train, y_train)
 
 
-# Dự đoán kết quả
+# Du doan tren tap kiem tra
 y_pred = mo_hinh.predict(X_test)
 
 
-# Precision và Recall khi lớp dương là 1: qua môn
+# Danh gia voi lop duong la qua mon (lop 1)
 precision_lop_1 = precision_score(
     y_test,
     y_pred,
     pos_label=1,
-    zero_division=0,
+    zero_division=0
 )
 
 recall_lop_1 = recall_score(
     y_test,
     y_pred,
     pos_label=1,
-    zero_division=0,
+    zero_division=0
 )
 
 
-# Precision và Recall khi lớp dương là 0: rớt môn
+# Danh gia voi lop duong la rot mon (lop 0)
 precision_lop_0 = precision_score(
     y_test,
     y_pred,
     pos_label=0,
-    zero_division=0,
+    zero_division=0
 )
 
 recall_lop_0 = recall_score(
     y_test,
     y_pred,
     pos_label=0,
-    zero_division=0,
+    zero_division=0
 )
 
 
-# In kết quả
-print("Lop 1 = qua mon")
+# In ket qua
+print("SO SANH PRECISION VA RECALL GIUA HAI LOP")
+print("=" * 50)
+
+print("\nLop 1: Qua mon")
 print(f"Precision = {precision_lop_1:.4f}")
 print(f"Recall    = {recall_lop_1:.4f}")
-print()
 
-
-print("Lop 0 = rot mon")
+print("\nLop 0: Rot mon")
 print(f"Precision = {precision_lop_0:.4f}")
 print(f"Recall    = {recall_lop_0:.4f}")
-print()
 
 
-# Giải thích
-print("Giai thich:")
+# Nhan xet
+print("\nNHAN XET:")
 print(
-    "Khi doi lop duong tu 1 sang 0, cach tinh Precision "
-    "va Recall cung thay doi theo lop dang duoc quan tam."
+    "Hai bo chi so khac nhau vi Precision va Recall "
+    "duoc tinh theo lop duong duoc chon."
 )
 print(
-    "Vi vay hai bo so co the khac nhau, du mo hinh va du lieu "
-    "khong thay doi."
+    "Khi doi lop duong tu 1 sang 0, vai tro cua TP, FP, FN "
+    "cung thay doi theo lop dang duoc danh gia."
 )
 print(
-    "Lop duong la lop ma ta dang xem la ket qua can tim, "
-    "nen Precision va Recall phai duoc hieu theo lop do."
+    "Mo hinh va du lieu khong thay doi, nhung cach nhin nhan "
+    "ket qua danh gia da thay doi."
 )

@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """
 Bước 2: Làm quen với hàm sigmoid bằng tay trước khi gọi thư viện.
 """

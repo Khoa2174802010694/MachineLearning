@@ -1,61 +1,39 @@
-# -*- coding: utf-8 -*-
-
-"""
-Bài tập 2: Vẽ hàm sigmoid.
-
-Vẽ hàm sigmoid trong khoảng z từ -8 đến 8,
-đồng thời đánh dấu mức xác suất 0.5 và z = 0.
-"""
-
+'''
+Bài tập 2: Vẽ hàm sigmoid
+Vẽ đồ thị hàm sigmoid với z chạy từ −8 tới 8, lưu thành tệp sigmoid.png. Trên cùng hình,
+vẽ thêm một đường ngang tại mức 0.5 và một đường dọc tại z = 0.
+Gợi ý, dùng np.linspace, plt.plot, plt.axhline, plt.axvline và plt.savefig
+'''
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+# Ham sigmoid
+def sigmoid(z):
+    return 1 / (1 + np.exp(-z))
 
 
-# Tạo các giá trị z từ -8 đến 8
-z = np.linspace(-8, 8, 400)
+# Tao du lieu z tu -8 den 8
+z = np.linspace(-8, 8, 200)
+y = sigmoid(z)
 
+# Ve do thi
+plt.figure(figsize=(8, 5))
+plt.plot(z, y, label="Sigmoid", linewidth=2)
 
-# Tính giá trị sigmoid
-sigmoid = 1 / (1 + np.exp(-z))
+# Them duong tham chieu
+plt.axhline(y=0.5, color="red", linestyle="--", label="y = 0.5")
+plt.axvline(x=0, color="green", linestyle="--", label="z = 0")
 
-
-# Vẽ đồ thị hàm sigmoid
-plt.plot(z, sigmoid, label="Sigmoid")
-
-
-# Vẽ đường ngang tại mức 0.5
-plt.axhline(
-    y=0.5,
-    linestyle="--",
-    label="y = 0.5",
-)
-
-
-# Vẽ đường dọc tại z = 0
-plt.axvline(
-    x=0,
-    linestyle="--",
-    label="z = 0",
-)
-
-
-# Đặt tiêu đề và tên các trục
+# Tieu de va nhan truc
 plt.title("Ham Sigmoid")
 plt.xlabel("z")
-plt.ylabel("sigmoid(z)")
-
-
-# Hiển thị chú thích
+plt.ylabel("Sigmoid(z)")
+plt.grid(True)
 plt.legend()
 
+# Luu hinh vao thu muc figures
+os.makedirs("figures", exist_ok=True)
+plt.savefig("figures/sigmoid.png", dpi=300, bbox_inches="tight")
 
-# Hiển thị lưới
-plt.grid(True)
-
-
-# Lưu hình ảnh
-plt.savefig("baitap02/sigmoid.png", dpi=300)
-
-
-# Hiển thị đồ thị
 plt.show()

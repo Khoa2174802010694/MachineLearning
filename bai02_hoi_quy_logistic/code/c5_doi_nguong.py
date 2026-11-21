@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """
 Bước 5: Tự áp ngưỡng và xem precision với recall thay đổi ra sao.
 """

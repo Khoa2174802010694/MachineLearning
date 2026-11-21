@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """
 Bước 6: Thêm điểm giữa kỳ làm biến thứ hai.
 """

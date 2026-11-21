@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """
 Bước 1: Đọc bộ dữ liệu sinh viên và xem qua một lượt.
 

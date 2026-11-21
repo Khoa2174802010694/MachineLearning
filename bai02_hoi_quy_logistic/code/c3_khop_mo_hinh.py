@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """
 Bước 3: Để scikit-learn tìm w và b từ dữ liệu thật.
 """

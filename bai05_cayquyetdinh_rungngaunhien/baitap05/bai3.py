@@ -1,3 +1,10 @@
+'''
+Bài tập 3: Gini hay entropy
+Chạy lại f3_do_sau.py nhưng thêm criterion="entropy" vào
+DecisionTreeClassifier. Ghi lại độ sâu tốt nhất và accuracy trên tập kiểm tra, rồi
+so với khi dùng Gini ở mục 4. Nhận xét một câu: đổi thước đo có làm kết quả khác đi
+nhiều không?
+'''
 from pathlib import Path
 
 import pandas as pd

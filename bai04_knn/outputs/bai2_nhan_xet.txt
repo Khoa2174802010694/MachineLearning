@@ -1,0 +1,4 @@
+Euclidean: k=13, Accuracy=0.9200
+Manhattan: k=27, Accuracy=0.9067
+Chenh lech accuracy: 0.0133
+Nhan xet: Thay doi cach do khoang cach co lam ket qua thay doi, nhung muc chenh lech khong lon.

@@ -1,0 +1,14 @@
+BAI 4 - SO SANH BO LOC NAIVE BAYES
+So mau train: 225
+So mau test: 75
+So tu trong tu dien: 40
+Alpha: 1.0
+Accuracy bo loc tu viet: 0.9467
+Accuracy MultinomialNB: 0.9467
+Chenh lech accuracy: 0.0000
+
+Nhan xet:
+- Bo loc tu viet dem tan suat tu theo tung lop va ap dung lam tron Laplace.
+- Diem moi lop duoc tinh bang tong log xac suat, tranh tran so khi nhan nhieu so nho.
+- Hai mo hinh su dung cung tap train/test, tu dien, cach tach tu va alpha.
+- Neu cai dat tu viet dung cung cong thuc MultinomialNB, accuracy se trung khop hoac rat gan nhau.

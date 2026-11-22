@@ -1,0 +1,11 @@
+BAI TAP 3: THAY DOI THAM SO LAM TRON ALPHA
+
+  alpha  accuracy  precision   recall
+  0.001  0.946667        1.0 0.866667
+  0.100  0.946667        1.0 0.866667
+  1.000  0.946667        1.0 0.866667
+ 10.000  0.946667        1.0 0.866667
+100.000  0.946667        1.0 0.866667
+
+NHAN XET:
+Khi alpha qua lon, cac xac suat tu co xu huong xich lai gan nhau. Mo hinh mat dan kha nang phan biet tu dac trung giua tin rac va tin thuong, do do hieu qua phan loai co the giam.

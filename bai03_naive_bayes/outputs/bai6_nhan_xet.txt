@@ -1,0 +1,4 @@
+Nhan xet:
+- Accuracy dat 98.00%, nhung recall lop rac chi dat 80.00%.
+- Accuracy co the tao cam giac mo hinh hoat dong tot khi lop thuong chiem da so, nhung no khong cho thay day du kha nang phat hien lop rac.
+- Trong tap test, mo hinh bo sot 1/5 tin rac. Vi vay can xem them recall cua lop rac, khong nen chi dua vao accuracy.

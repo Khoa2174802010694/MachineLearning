@@ -1,3 +1,10 @@
+'''
+Bài tập 4: Cắt tỉa bằng số khách tối thiểu ở lá
+Giữ cây không giới hạn độ sâu, chỉ thay đổi min_samples_leaf lần lượt bằng 1, 2, 5, 10,
+20 và 40. Chọn giá trị tốt nhất bằng kiểm định chéo 5 phần trên tập học, rồi chấm một lần
+trên tập kiểm tra.
+So với cây sâu 5 của mục 4. Cách cắt tỉa nào cho kết quả tốt hơn trên bộ dữ liệu này?
+'''
 from pathlib import Path
 
 import pandas as pd

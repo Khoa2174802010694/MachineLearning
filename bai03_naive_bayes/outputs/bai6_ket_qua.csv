@@ -1,0 +1,2 @@
+﻿so_tin_thuong,so_tin_rac,so_train,so_test,accuracy,recall_lop_rac,tn,fp,fn,tp
+180,20,150,50,0.98,0.8,45,0,1,4

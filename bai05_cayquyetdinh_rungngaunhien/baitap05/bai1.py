@@ -1,3 +1,11 @@
+'''
+Bài tập 1: Tự vẽ cây
+Dùng hàm plot_tree trong sklearn.tree để vẽ lại cây năm lá của mục 3, rồi lưu thành tệp
+cay_nam_la.png bằng plt.savefig. Gợi ý, truyền thêm feature_names, class_names
+và filled=True.
+Sau đó vẽ cây sâu 2 bằng max_depth=2. Hai lá bên trái của cây này có cùng kết luận không?
+Nếu có, vì sao cây vẫn chia nút đó ra làm hai?
+'''
 import os
 import matplotlib.pyplot as plt
 import pandas as pd

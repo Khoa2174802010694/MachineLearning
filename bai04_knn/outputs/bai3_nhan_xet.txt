@@ -1,0 +1,5 @@
+Ban dau, khong chuan hoa: 0.5333
+Doi don vi, khong chuan hoa: 0.8667
+Ban dau, co chuan hoa: 0.8667
+Doi don vi, co chuan hoa: 0.8667
+Nhan xet: KNN rat nhay voi thang do khi khong chuan hoa. StandardScaler dua cac dac trung ve cung thang do, nen viec doi don vi truoc do khong lam thay doi ket qua.

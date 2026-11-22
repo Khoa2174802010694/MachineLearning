@@ -1,0 +1,8 @@
+Bai tap 5 - Chon sai bien the Naive Bayes
+So mau train: 90
+So mau test: 30
+MultinomialNB accuracy: 0.8000
+GaussianNB accuracy: 0.9000
+Chenh lech (GaussianNB - MultinomialNB): 0.1000
+
+MultinomialNB khong bao loi trong bai nay vi cac gia tri gio_on va diem_giua_ky deu khong am. Tuy nhien, mo hinh nay duoc thiet ke cho du lieu dang dem/tan suat va mo hinh hoa xac suat theo tong gia tri dac trung. Hai cot gio_on va diem_giua_ky la bien so lien tuc, khong phai so lan xuat hien. GaussianNB phu hop hon vi no mo hinh hoa moi dac trung lien tuc bang phan phoi Gaussian trong tung lop. Accuracy cao hon khong lam thay doi su khong phu hop ve gia dinh cua MultinomialNB.

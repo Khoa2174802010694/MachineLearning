@@ -1,3 +1,11 @@
+'''
+Bài tập 6: Rừng cho bài toán hồi quy
+Trên dữ liệu giá nhà, dùng RandomForestRegressor với 200 cây và random_state=0, cùng
+cách chia như mục 8. So MAE trên tập kiểm tra với cây sâu 3 và với đường thẳng.
+Dự đoán giá căn 250 m2
+. Rừng có ngoại suy được không? Giải thích bằng cách lá của mỗi
+cây đưa ra dự đoán.
+'''
 from pathlib import Path
 
 import pandas as pd

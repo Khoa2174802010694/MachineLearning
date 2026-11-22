@@ -1,0 +1,4 @@
+k=1: Uniform=0.8000, Distance=0.8000, Chenh lech=+0.0000
+k=13: Uniform=0.9200, Distance=0.9333, Chenh lech=+0.0133
+k=101: Uniform=0.8533, Distance=0.9067, Chenh lech=+0.0533
+Nhan xet: Voi k=101, trong so khoang cach giup mo hinh cai thien accuracy vi cac lang gieng gan duoc uu tien hon cac lang gieng xa.

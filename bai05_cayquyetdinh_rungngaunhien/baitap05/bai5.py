@@ -1,3 +1,11 @@
+'''
+Bài tập 5: Độ quan trọng bằng cách xáo trộn
+Lấy lại rừng có cột so_ngau_nhien ở mục 7. Thêm một cột ngẫu nhiên tương tự
+vào tập kiểm tra, rồi dùng permutation_importance trong sklearn.inspection với
+n_repeats=20 và random_state=0.
+In độ quan trọng trung bình của năm cột. Cột ngẫu nhiên xếp thứ mấy theo cách đo này?
+So với thứ hạng của nó theo feature_importances_, và giải thích sự khác nhau.
+'''
 from pathlib import Path
 
 import numpy as np

@@ -1,3 +1,9 @@
+'''
+Bài tập 2: Tự tìm câu hỏi gốc trên dữ liệu thật
+Mở rộng f1_gini.py thành hàm tim_cau_hoi(X, y) thử mọi cột và mọi ngưỡng, trả về
+cột và ngưỡng làm Gini giảm nhiều nhất. Chạy hàm trên 450 khách của tập học.
+Kết quả phải trùng với câu hỏi gốc của mọi cây ở bài này, tức là thu nhập với ngưỡng 15.05.
+'''
 from pathlib import Path
 
 import numpy as np

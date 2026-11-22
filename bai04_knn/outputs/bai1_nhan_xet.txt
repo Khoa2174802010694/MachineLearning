@@ -1,0 +1,8 @@
+BAI TAP 1 - TU VIET KNN
+So mau hoc: 225
+So mau kiem tra: 75
+k: 13
+Accuracy KNN tu viet: 0.9200
+Accuracy sklearn: 0.9200
+So du doan khac nhau: 0
+Nhan xet: Hai cach cai dat cho ket qua trung khop.
